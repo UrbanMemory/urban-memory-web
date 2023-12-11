@@ -16,7 +16,7 @@ function Products() {
     const [products, setProducts]: [Product[], (products: Product[]) => void] = useState(emptyProducts);
     
     useEffect(() => {
-        axios.get<Product[]>("https://localhost:5173/catelog",
+        axios.get<Product[]>("https://urbanmemory-api.azurewebsites.net/catelog",
         {
             headers: {
                 "Content-Type": "application/json",
